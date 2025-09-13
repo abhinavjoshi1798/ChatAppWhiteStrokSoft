@@ -1,0 +1,1 @@
+export const CHAT_EVENT_STREAM_URL = `${import.meta.env.VITE_BACKEND_URL}/ws/v1/chat/events`

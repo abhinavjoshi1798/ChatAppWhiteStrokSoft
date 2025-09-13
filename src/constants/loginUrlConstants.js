@@ -1,0 +1,1 @@
+export const LOGIN_URL = `${import.meta.env.VITE_BACKEND_URL}/user/v1/auth/login`;
