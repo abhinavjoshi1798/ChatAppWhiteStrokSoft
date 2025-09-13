@@ -129,7 +129,8 @@ export default function ChatApp() {
                   console.log("item", item);
                   setSelectedThread(item);
                 }}
-                className="flex items-center gap-3 p-4 hover:bg-[#151528]  cursor-pointer  border-b border-gray-800 transition-colors"
+                className= {`flex items-center gap-3 p-4 cursor-pointer border-b border-gray-800 transition-colors
+    ${selectedThread?.id === item.id ? "bg-[#151528]" : "hover:bg-[#151528]"}`}
               >
                 <img
                   src={item.user.profileImageUri}
